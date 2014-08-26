@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule ^shirts/([0-9]+)/$ /shirt?id=$1
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+Options +MultiViews
